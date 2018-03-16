@@ -2,6 +2,8 @@
 
 Clear the screen with `/clear` in Slack workspaces
 
+![example](https://raw.githubusercontent.com/bertrandom/slack-clear/master/static/img/clear-1600.png)
+
 ## Slack App Configuration
 
 Create a new [Slack Workspace Token App](https://api.slack.com/apps/new_app_token).
