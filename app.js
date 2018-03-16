@@ -32,7 +32,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', function (req, res) {
-	res.render('home');
+	res.render('home', {
+		slack: config.slack
+	});
 });
 
 app.get('/install', function (req, res) {
