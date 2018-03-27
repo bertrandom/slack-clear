@@ -76,7 +76,7 @@ app.get('/oauth', function (req, res) {
 				return res.sendStatus(500);
 			}
 
-			res.redirect('https://slack.com/app_redirect?app=' + results.app_id);
+			res.redirect('https://slack.com/app_redirect?app=' + results.app_id + '&team=' + results.team_id);
 
 			let web = new WebClient(results.access_token);
 			web.chat.postMessage({ channel: results.authorizing_user_id, text: 'Thanks for installing Clear. You can clear the screen by typing `/clear`, try it now.' });
