@@ -10,8 +10,8 @@ const OAuth2 = OAuth.OAuth2;
 const oauth2 = new OAuth2(config.slack.client_id,
 	config.slack.client_secret,
 	'https://slack.com/', 
-	'/oauth/authorize',
-	'/api/oauth.token', 
+	'oauth/authorize',
+	'api/oauth.token', 
 	null);
 
 const { WebClient } = require('@slack/client');
